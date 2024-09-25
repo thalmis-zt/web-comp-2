@@ -1,10 +1,14 @@
-<svelte:options customElement="web-counter" />
+<svelte:options customElement="my-counter" />
 
 <script>
-  let count = 0;
+  export let count = 0;
   const increment = () => {
     count += 1;
   };
+  const reset = () => {
+    count = 0;
+  };
+  export { reset };
 </script>
 
 <button on:click={increment}>
