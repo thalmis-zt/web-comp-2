@@ -17,6 +17,6 @@
   }
 </script>
 
-<button on:click={handleBtnClick} bind:this={btnRef}>
+<button on:click={handleBtnClick} bind:this={btnRef} class="font-bold">
   {btnText}
 </button>
