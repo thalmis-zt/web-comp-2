@@ -1,6 +1,7 @@
 <svelte:options customElement="my-btn" />
 
 <script>
+  import "../app.css";
   export let btnText = "Button";
   let btnRef;
 
